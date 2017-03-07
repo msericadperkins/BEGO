@@ -1,0 +1,78 @@
+body{
+	margin: auto;
+	padding-bottom: 5em;
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.list-group{
+	background-color: #000000;
+	color: #ffffff;
+}
+/*Animation Start*/
+.fade{
+	animation-name: fade;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+}
+@keyframes fade{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+/*Animation End*/
+h1{
+	color: #ffffff;
+	border-left: 0.2em solid #C70039;
+	font-weight: 700;
+	padding-left: 0.3em;
+	opacity: 1;	
+}
+h1:hover{
+	color: #C70039;
+	border-left: 0.2em solid #ffffff;
+}
+li{
+	color: #000;
+}
+.row{
+	opacity: 1;
+	color: #ffffff;
+}
+.row1{
+
+}
+.row2 {
+	margin-top: 2em;
+}
+.row3{
+
+}
+.row4{
+	margin-top: 3em;
+	text-align: center;
+}
+.row5{
+	margin-top: 6em;
+	margin-left: 2.2em;
+}
+.row6{
+	margin-left: 2.2em;
+}
+.brdr{
+	border-top: 0.2em solid #C70039;
+	margin-top: 2em;
+}
+.navbar{
+	opacity: 1;
+}
+
+.triHead{
+	color: #ffffff;
+}
+.glyphicon{
+	color: #C70039;
+	size: 70%;
+}
+.signature{
+	color: #000000;
+}

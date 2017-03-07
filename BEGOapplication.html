@@ -1,0 +1,226 @@
+<!Doctype html>
+<head>
+<meta lang="en"/>
+	
+<title>BEGO application</title>
+<!--links-->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<style>
+body{
+	margin: auto;
+	padding-bottom: 5em;
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.list-group{
+	background-color: #000000;
+	color: #ffffff;
+}
+/*Animation Start*/
+.fade{
+	animation-name: fade;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+}
+@keyframes fade{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+/*Animation End*/
+h1{
+	color: #ffffff;
+	border-left: 0.2em solid #C70039;
+	font-weight: 700;
+	padding-left: 0.3em;
+	opacity: 1;	
+}
+h1:hover{
+	color: #C70039;
+	border-left: 0.2em solid #ffffff;
+}
+li{
+	color: #000;
+}
+.row{
+	opacity: 1;
+	color: #ffffff;
+}
+.row1{
+
+}
+.row2 {
+	margin-top: 2em;
+}
+.row3{
+
+}
+.row4{
+	margin-top: 3em;
+	text-align: center;
+}
+.row5{
+	margin-top: 6em;
+	margin-left: 2.2em;
+}
+.row6{
+	margin-left: 2.2em;
+}
+.brdr{
+	border-top: 0.2em solid #C70039;
+	margin-top: 2em;
+}
+.navbar{
+	opacity: 1;
+}
+
+.triHead{
+	color: #ffffff;
+}
+.glyphicon{
+	color: #C70039;
+	size: 70%;
+}
+.signature{
+	color: #000000;
+}
+</style>
+</head>
+</body>
+<div class="container">
+
+<div class="row row1 fade">
+	<div class="col-md-3"><h1>BEGO</h1></div>
+</div>
+
+<div class="row row2 fade">
+<div class="col-md-8 col-md-offset-2">
+<p class="about text-center">
+  Studies suggest that people who visualize their goals are 70% more likely to acheive them than those who do not. <strong>BEGO</strong> is a tool designed for aiding individuals who like to visualize. After entering where you would like to live and what you (would like to) earn, <strong>BEGO</strong> returns a list of helpful anylitics that will hopefully inspire you to see your goals as something plausable and less of an abstract ideation.<br>
+	This application is in BETA. The Alpha version will allow you to click on any given city and see the provided anylitics in the middle column.
+  </p>
+</div>
+</div>
+
+<div class="row row3 fade">
+<div class="col-md-4 col-md-offset-4 brdr">&nbsp;</div>
+</div>
+
+<div class="row row4 fade">
+<div class="col-md-8 col-md-offset-2">
+	
+	<form class="form-inline" name="uform">	
+	<div class="input-group">
+	<select class="form-control" name="states" id="uStates">
+  		<option value="AL">Alabama </option>
+  		<option value="AK">Alaska </option>
+  		<option value="AZ">Arizona </option>
+  		<option value="AR">Arkansas</option> 
+  		<option value="CA">California</option>  
+		<option value="CO">Colorado</option> 
+		<option value="CT">Connecticut</option> 
+		<option value="DE">Delaware</option> 
+		<option value="FL">Florida</option> 
+		<option value="GA">Georgia</option> 
+		<option value="HI">Hawaii</option> 
+		<option value="ID">Idaho</option> 
+		<option value="IL">Illinois</option>
+		<option value="IN">Indiana</option> 
+		<option value="IA">Iowa</option> 
+		<option value="KS">Kansas</option> 
+		<option value="KY">Kentucky</option> 
+		<option value="LA">Louisiana</option> 
+		<option value="MN">Maine</option> 
+		<option value="MD">Maryland</option> 
+		<option value="MA">Massachusetts</option> 
+		<option value="MI">Michigan</option> 
+		<option value="MN">Minnesota</option> 
+		<option value="MS">Mississippi</option> 
+		<option value="MO">Missouri </option>
+		<option value="MT">Montana</option>
+		<option value="NE">Nebraska</option> 
+		<option value="NV">Nevada</option> 
+		<option value="NH">New Hampshire</option> 
+		<option value="NJ">New Jersey</option> 
+		<option value="NM">New Mexico</option> 
+		<option value="NY">New York</option> 
+		<option value="NC">North Carolina</option> 
+		<option value="ND">North Dakota</option> 
+		<option value="OH">Ohio</option> 
+		<option value="OK">Oklahoma</option> 
+		<option value="OR">Oregon</option> 
+		<option value="PA">Pennsylvania</option> 
+		<option value="RI">Rhode Island</option> 
+		<option value="SC">South Carolina</option> 
+		<option value="SD">South Dakota</option> 
+		<option value="TN">Tennessee</option> 
+		<option value="TX">Texas</option> 
+		<option value="UT">Utah</option> 
+		<option value="VT">Vermont</option> 
+		<option value="VA">Virginia</option> 
+		<option value="WA">Washington</option> 
+		<option value="WV">West Virginia </option>
+		<option value="WI">Wisconsin</option> 
+		<option value="WY">Wyoming</option>
+	</select>
+ 		<span class="input-group-addon">$</span>
+  		<input type="text" class="form-control" id="uSalary" aria-label="Amount (to the nearest dollar)" placeholder="60000" name="usal">
+  		<span class="input-group-addon">.00</span>
+  		<span class="input-group-btn">
+  		<button class="btn btn-default" type="button" id="uBtn" placeholder="submit">Submit</button>
+		</span>
+	</div>
+	</form>
+
+</div>
+</div>
+
+<div class="row row5 fade">
+<div class="col-md-3 col-md-offset-1"><p class="lead text-left triHead">TOP CITIES</p></div>
+<div class="col-md-3"><p class="lead text-center triHead">DEMOGRAPHICS</p></div>
+<div class="col-md-3"><p class="lead text-right triHead">FINANCES</p></div>
+</div>
+
+<div class="row row6 fade">
+<div class="col-md-3 col-md-offset-1">
+<ul class="list-group">
+	<li class="list-group-item" id="city1">&nbsp;</li>
+	<li class="list-group-item" id="city2">&nbsp;</li>
+	<li class="list-group-item" id="city3">&nbsp;</li>
+	<li class="list-group-item" id="city4">&nbsp;</li>
+	<li class="list-group-item" id="city5">&nbsp;</li>
+</ul>
+</div>
+<div class="col-md-3">
+	<ul class="list-group" id="uList">
+	<li class="list-group-item">Population:</li>
+	<li class="list-group-item">Unemployment:</li>
+	<li class="list-group-item">Elementary:</li>
+	<li class="list-group-item">Middle:</li>
+	<li class="list-group-item">High School:</li>
+</ul>
+</div>
+<div class="col-md-3">
+	<ul class="list-group">
+      <li class="list-group-item" id="mysal"><b>Net Salary:</b></li>
+      <li class="list-group-item" id="mytax"><b>Taxes:</b></li>
+      <li class="list-group-item" id="mytaxbrack"><b>Tax Bracket:</b></li>
+      <li class="list-group-item" id="myrent"><b>Rent Range:</b></li>
+      <li class="list-group-item" id="mysec"><b>Rent Deposit:</b></li>
+    </ul>
+</div>
+</div>
+<!--end of container-->
+</div>
+<nav class="navbar navbar-default navbar-fixed-bottom fade">
+  <div class="container text-center">
+  <p class="signature">Imagined with
+  <span class='glyphicon glyphicon-heart' id='love'></span>
+  By Erica Perkins</p>
+  </div>
+</nav>
+</body>
+</html>
